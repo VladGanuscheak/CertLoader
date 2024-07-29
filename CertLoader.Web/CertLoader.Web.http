@@ -1,0 +1,6 @@
+@CertLoader.Web_HostAddress = http://localhost:5185
+
+GET {{CertLoader.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

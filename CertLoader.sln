@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertLoader", "CertLoader\CertLoader.csproj", "{D4CE8CE4-0FBD-4928-BDF4-59FC59B8CAE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertLoader.Web", "CertLoader.Web\CertLoader.Web.csproj", "{61A379DF-2DF1-4673-B8FD-67BF8971A5F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4CE8CE4-0FBD-4928-BDF4-59FC59B8CAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CE8CE4-0FBD-4928-BDF4-59FC59B8CAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CE8CE4-0FBD-4928-BDF4-59FC59B8CAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CE8CE4-0FBD-4928-BDF4-59FC59B8CAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A379DF-2DF1-4673-B8FD-67BF8971A5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A379DF-2DF1-4673-B8FD-67BF8971A5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A379DF-2DF1-4673-B8FD-67BF8971A5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A379DF-2DF1-4673-B8FD-67BF8971A5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7C8DDFF-B291-4021-9C3A-08CD5844A827}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "X509FindType": {
+      "type": "string",
+      "enum": [
+        "FindByApplicationPolicy",
+        "FindByCertificatePolicy",
+        "FindByExtension",
+        "FindByIssuerDistinguishedName",
+        "FindByIssuerName",
+        "FindByKeyUsage",
+        "FindBySerialNumber",
+        "FindBySubjectDistinguishedName",
+        "FindBySubjectKeyIdentifier",
+        "FindBySubjectName",
+        "FindByTemplateName",
+        "FindByThumbprint",
+        "FindByTimeExpired",
+        "FindByTimeNotYetValid",
+        "FindByTimeValid"
+      ]
+    },
+    "FindValue": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": ".*",
+          "not": {
+            "anyOf": [
+              {
+                "properties": {
+                  "X509FindType": {
+                    "enum": [
+                      "FindByTimeExpired",
+                      "FindByTimeNotYetValid",
+                      "FindByTimeValid"
+                    ]
+                  }
+                },
+                "required": [ "X509FindType" ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "string",
+          "format": "date-time",
+          "properties": {
+            "X509FindType": {
+              "enum": [
+                "FindByTimeExpired",
+                "FindByTimeNotYetValid",
+                "FindByTimeValid"
+              ]
+            }
+          },
+          "required": [ "X509FindType" ]
+        }
+      ]
+    },
+    "ValidOnly": {
+      "type": "boolean"
+    }
+  },
+  "required": [ "X509FindType", "FindValue", "ValidOnly" ]
+}

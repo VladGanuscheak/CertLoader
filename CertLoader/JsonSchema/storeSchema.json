@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "StoreName": {
+      "type": "string",
+      "enum": [ "AddressBook", "AuthRoot", "CertificateAuthority", "Disallowed", "My", "Root", "TrustedPeople", "TrustedPublisher" ]
+    },
+    "StoreLocation": {
+      "type": "string",
+      "enum": [ "CurrentUser", "LocalMachine" ]
+    },
+    "OpenFlags": {
+      "type": [ "array", "null" ],
+      "items": {
+        "type": "string",
+        "enum": [ "ReadOnly", "ReadWrite", "MaxAllowed", "OpenExistingOnly", "IncludeArchived" ]
+      },
+      "default": []
+    }
+  },
+  "required": [ "StoreName", "StoreLocation" ]
+}
